@@ -1,2 +1,2 @@
 # BlogSurvey
-Creating a form using HTML and CSS
+Created a form using HTML and CSS

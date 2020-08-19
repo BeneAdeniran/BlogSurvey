@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bene's Blog Survey</title>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+    <h1>Bene's Blog Survey</h1>
+    
+    <form action="#"> <!-- link takes you no where -->
+        <label for="where">Please select where you heard about this from:</label>
+        <input list="where" name="where" placeholder="Select one">
+        <datalist id="where" required>
+          <option value="Twitter">
+          <option value="Instagram">
+          <option value="Facebook">
+          <option value="Snapchat">
+          <option value="None">
+          <option value="Other">
+        </datalist> <!--- drop down list-->
+    
+        If other, specify:
+        <input type="text" placeholder="Other">
+
+        <div>
+            <h4>Are you an avid blog reader?</h4>
+        <label for="yes"><input id="yes" type="radio" name="yes-no" value="yes"> Yes</label>
+        <br>
+        <label for="no"><input id="no" type="radio" name="yes-no" value="no"> No</label>
+        </div>
+
+        <div>
+            <h4>Which of these currently describes you?</h4>
+         <label><input type="checkbox" name="personality"> College Student</label><br>
+         <label><input type="checkbox" name="personality"> High School Student</label><br>
+         <label><input type="checkbox" name="personality"> Graduated</label><br>
+         <label><input type="checkbox" name="personality"> High School Drop Out</label><br>
+         <label><input type="checkbox" name="personality"> College Drop Out</label> <br>
+         <label><input type="checkbox" name="personality"> None of the above</label><br>
+        </div> 
+        <!--- &nbsp creates a little extra space horizontally-->
+
+        <div>
+            <h4>When do you tend to read blog posts?</h4>
+        <label for="morning"><input id="morning" type="radio" name="time-frame" value="morning"> Morning</label>
+        <br>
+        <label for="afternoon"><input id="afternoon" type="radio" name="time-frame" value="afternoon"> Afternoon</label><br>
+        <label for="evening"><input id="evening" type="radio" name="time-frame" value="evening"> Evening</label>
+        </div>
+
+        <div>
+            <h4> Please let me know what you will be interested in reading about:</h4>
+            <textarea id="suggestions" name="suggestions" placeholder="Start typing here..." rows="4" cols="100"></textarea>
+            </div>
+        
+
+        <button type="submit">Submit</button>
+        </section>
+    </form>
+</body>
+</html>
